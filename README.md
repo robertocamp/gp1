@@ -23,9 +23,10 @@ func main() {
 ## initial environment verfication
 - go run: runs the command in place: `go run main.go`
 - go build {main.go}: will build an exectuable *that matches the file name:* `go build main.go`
-- go build : will build *a package environment* in the current directory: `go build`
+- go build : will build *a package* in the current directory, *with the name of the parent directory*: `go build`
 - $GOPATH: your $GOPATH should contain a `bin` directory ; this is where `go install` will build code
+-  `echo $GOPATH`
 - go install: will build a binary file in your **$GOPATH/bin** directory: `go install`
-
+- with packages, it is a good idea to keep the package name the same of the parent directory
 
 
